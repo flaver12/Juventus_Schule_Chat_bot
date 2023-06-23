@@ -15,7 +15,7 @@ You can use the provided `docker-compose.yaml` to start up redis.
 Make sure your redis is running. Then open a Terminal and navigate to the `server` folder. Then run this command: `python3 app.py`      
 
 ## Start the client
-**Important** if you have configured the server to not run on `127.0.0.1` please make sure to update this line: `http://127.0.0.1:5000`, this is for the `socket.io` connection.
+**Important** if you have configured the server to not run on `127.0.0.1` please make sure to update this line in the `App.tsx`: `socket = io('http://127.0.0.1:5000');`, this is for the `socket.io` connection.
 Then open a Terminal and navigate to the `fifa-client` folder.   
 Then run this commands:
 ```
